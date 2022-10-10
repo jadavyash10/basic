@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Robert",
+      "last_name": "Schwartz",
+      "email": "rob23@gmail.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Lucy yadav",
+      "last_name": "Ballmer",
+      "email": "lucyb56@gmail.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Anna",
+      "last_name": "Smith",
+      "email": "annasmith23@gmail.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Robert",
+      "last_name": "Brown",
+      "email": "bobbrown432@yahoo.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Roger",
+      "last_name": "Bacon",
+      "email": "rogerbacon12@yahoo.com"
+    }
+  ],
+  "friends": [
+    {
+      "id": 11,
+      "name": "John"
+    },
+    {
+      "id": 12,
+      "name": "doe"
+    },
+    {
+      "id": 13,
+      "name": "akshay"
+    },
+    {
+      "id": 14,
+      "name": "tejas"
+    },
+    {
+      "id": "123",
+      "name": "vishal"
+    },
+    {
+      "id": "32",
+      "name": "asddfas"
+    },
+    {
+      "id": "33",
+      "name": "asdf"
+    } 
+  ],
+  "colors": [
+    {
+      "id": 21,
+      "name": "green"
+    },
+    {
+      "id": 22,
+      "name": "yellow"
+    },
+    {
+      "id": 23,
+      "name": "red"
+    },
+    {
+      "id": 24,
+      "name": "blue"
+    },
+    {
+      "id": 25,
+      "name": "black"
+    },
+    {
+      "id": 26,
+      "name": "pink"
+    },
+    {
+      "id": 27,
+      "name": "powderblue"
+    },
+    {
+      "id": 28,
+      "name": "green"
+    },
+    {
+      "id": 29,
+      "name": "green"
+    },
+    {
+      "id": 30,
+      "name": "green"
+    }
+  ],
+  "persons": [
+    {
+      "id": "tagline@gmail.com",
+      "technologyid": "tagline"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "tagline",
+      "field": [
+        "react js",
+        "angular js",
+        "node js",
+        "react native"
+      ]
+    }
+  ]
+}
