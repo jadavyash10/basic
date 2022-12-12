@@ -28,11 +28,14 @@ const InitialQuerydata = (queryKey) => {
         }
       },
     }
-  );
-
+  );console.log('data', data)
   return (
     <div>
       InitialQuerydata
+      <div>
+        <h2>{data?.data?.first_name}</h2>
+        <h2>{data?.data?.email}</h2>
+      </div>
       <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
     </div>
   );

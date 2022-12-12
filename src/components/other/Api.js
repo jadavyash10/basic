@@ -14,7 +14,7 @@ const wrappromise = (promise) => {
   let result;
 
   let suspender = promise.then(
-     (res) => {
+    (res) => {
       status = "success";
       result = res;
     },
@@ -37,7 +37,6 @@ const wrappromise = (promise) => {
 };
 
 const fetchUser = () => {
-  console.log("fetching users .....");
   return axios
     .get("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.data)
@@ -45,9 +44,8 @@ const fetchUser = () => {
 };
 
 const fetchPost = () => {
-  console.log("fetching users .....");
   return axios
     .get("https://jsonplaceholder.typicode.com/posts")
-    .then((res) => res.data.slice(0,5))
+    .then((res) => res.data.slice(0, 5))
     .catch((err) => console.log(err));
 };

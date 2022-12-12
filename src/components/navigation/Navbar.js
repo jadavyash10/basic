@@ -26,8 +26,9 @@ const Navbar = () => {
         <li><Link to='/redux'>Redux</Link></li>
         <li><Link to='/reusable'>Reusable</Link></li>
         <li><Link to='/uncontroll'>Uncontroll</Link></li>
-        <li><Link to='/query'>Query</Link></li>
         <li><Link to='/formik'>Formik</Link></li>
+        <li><Link to='/query'>Query</Link></li>
+        <li><Link to='/chatApp'>chatApp</Link></li>
     </ul>
   )
 }

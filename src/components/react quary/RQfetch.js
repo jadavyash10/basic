@@ -56,7 +56,7 @@ const RQfetch = () => {
         return <p key={user}>{user}</p>;
       })} */}
       <button onClick={refetch}>FetchData</button>
-      <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
+      <ReactQueryDevtools initialIsOpen={false}  position="bottom-right" />
     </>
   );
 };

@@ -4,7 +4,7 @@ import TextError from "./TextError";
 
 const RadioButton = (props) => {
   const { lable, name, type, options, ...rest } = props;
-
+  console.log('props', options)
   return (
     <div>
       <label>{lable} : </label>

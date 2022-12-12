@@ -44,6 +44,8 @@ import FormikContainer from "../formik/FormikContainer";
 import RegistrationForm from "../formik/RegistrationForm";
 import InfiniteQuery from "../react quary/InfiniteQuery";
 import AddData from "../react quary/AddData";
+import ChatApp from "../chatapp/Index"
+
 const queryClient = new QueryClient();
 
 export const Arr = [
@@ -315,6 +317,11 @@ export const Arr = [
         path: "formik/Rform",
         element: <RegistrationForm />,
         id: "RegistrationForm",
+      },
+      {
+        path: "chatApp",
+        element: <ChatApp />,
+        id: "chatApp",
       },
     ],
   },

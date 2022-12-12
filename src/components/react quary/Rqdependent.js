@@ -8,7 +8,7 @@ const fetchbyemail = (email) => {
 };
 
 const fetchTechbyTechid = (techid) => {
- return axios.get(`http://localhost:4000/technologies/${techid}`);
+  return axios.get(`http://localhost:4000/technologies/${techid}`);
 };
 
 const Rqdependent = ({ email }) => {
@@ -17,12 +17,23 @@ const Rqdependent = ({ email }) => {
   );
   const techid = person?.data.technologyid;
 
-  useQuery(["technologies", techid], () => fetchTechbyTechid(techid), {
-    enabled: !!techid,
-  });
+  const { data: technologies, technologieserror } = useQuery(
+    ["technologies", techid],
+    () => fetchTechbyTechid(techid),
+    {
+      enabled: !!techid,
+    }
+  );
+
+  console.log(technologies);
   return (
     <div>
       Rqdependent
+      <div>
+        {technologies?.data?.field?.map((v, i) => {
+          return <div key={i}>{v}</div>;
+        })}
+      </div>
       <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
     </div>
   );

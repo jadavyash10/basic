@@ -18,6 +18,16 @@ const RqdynamicParallel = ({ ids }) => {
   return (
     <div>
       RqdynamicParallel
+      <div>
+        {results.map((result) => {
+          return (
+            <div key={result?.data?.id}>
+              <h2>{result?.data?.data.first_name}</h2>
+              <h2>{result?.data?.data.email}</h2>
+            </div>
+          );
+        })}
+      </div>
       <ReactQueryDevtools initialIsOpen={true} position="bottom-right" />
     </div>
   );

@@ -38,8 +38,9 @@ const FormikContainer = () => {
     birthDate: Yup.date().required("required").nullable(),
   });
 
-  const onSubmit = (values) => {
+  const onSubmit = (values, onSubmitProps) => {
     console.log("first", values);
+    onSubmitProps.resetForm();
   };
 
   const FormArr = [
@@ -78,6 +79,7 @@ const FormikContainer = () => {
       control: "date",
     },
   ];
+  console.log('first', FormArr)
   return (
     <Formik
       initialValues={initialValues}
