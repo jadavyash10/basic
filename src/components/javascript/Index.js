@@ -108,7 +108,7 @@ const Index = () => {
   });
 
   console.log((obj.add = 5));
-  console.log(obj.reset);
+  console.log(obj.decrement,obj.counter);
   console.log(obj);
 
   function Person(first, last, age, eyecolor) {
